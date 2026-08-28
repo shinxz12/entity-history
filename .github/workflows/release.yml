@@ -24,7 +24,7 @@ jobs:
           registry-url: https://registry.npmjs.org
       - run: pnpm install --frozen-lockfile
       - run: pnpm -r build
-      - uses: changesets/action@v1
+      - uses: changesets/action@v2
         with:
           # `changeset publish` (not `pnpm -r publish`) so the action can parse
           # published versions and create git tags + GitHub Releases
